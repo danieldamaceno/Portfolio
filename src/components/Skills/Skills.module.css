@@ -1,0 +1,27 @@
+.skills h1 {
+  text-align: center;
+  border-top: 2px solid rgb(130, 130, 130);
+  width: 500px;
+  margin: 10rem auto 2rem auto;
+  padding: 1.5rem;
+}
+
+.skills section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills .logo {
+  padding: 1.25rem 2rem;
+  background-color: #212121;
+}
+
+.skills img {
+  height: 6rem;
+}
+
+@media (max-width: 700px) {
+  .skills img {
+    height: 4rem;
+  }
+}

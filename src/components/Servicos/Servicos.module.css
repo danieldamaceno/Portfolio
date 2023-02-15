@@ -1,0 +1,53 @@
+.servicos h1 {
+  text-align: center;
+  border-top: 2px solid rgb(130, 130, 130);
+  width: 500px;
+  margin: 6rem auto 2rem auto;
+  padding: 1.5rem;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options div {
+  background-color: #212121;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 200px;
+  border-width: 10px 10px 5px;
+  border-style: solid;
+  border-color: rgb(26, 26, 26) rgb(26, 26, 26) rgb(0, 223, 94);
+  border-image: initial;
+  overflow: hidden;
+}
+
+.options svg {
+  margin-bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  color: #00df5e;
+}
+
+.options h2 {
+  color: rgb(130, 130, 130);
+}
+
+@media (max-width: 950px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+  .options div {
+    margin-bottom: 1rem;
+  }
+  .opttions div:last-child {
+    margin-bottom: 0;
+  }
+  .servicos section {
+    margin: 0 2rem;
+  }
+}

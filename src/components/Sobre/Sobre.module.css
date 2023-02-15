@@ -1,0 +1,67 @@
+.Sobre h1 {
+  text-align: center;
+  border-top: 2px solid rgb(130, 130, 130);
+  width: 500px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.Sobre p {
+  color: rgb(130, 130, 130);
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.social .itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+}
+
+.social .icon {
+  display: flex;
+  padding: 1.2rem;
+  background-color: rgb(33, 33, 33);
+  border-radius: 50%;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: 0.3s;
+}
+
+.social .icon svg {
+  color: #00df5e;
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: 0.3s;
+}
+
+.social h2 {
+  font-size: 1.25rem;
+  color: #f9f9f9;
+}
+
+.social .itens:hover .icon {
+  background-color: #00df5e;
+}
+
+.social .itens:hover .icon svg {
+  color: #1a1a1a;
+}
+
+@media (max-width: 850px) {
+  .social {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .social p {
+    margin-bottom: 2rem;
+  }
+}

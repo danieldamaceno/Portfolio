@@ -1,0 +1,120 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.Header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.Header h2 {
+  font-size: 2rem;
+}
+
+.Header .logo svg {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.4rem 2rem 0 1rem;
+  margin-left: 1rem;
+  margin-top: 4px;
+}
+
+.Header .nav {
+  display: flex;
+}
+
+.Header .nav a {
+  display: flex;
+  margin-left: 2rem;
+  color: #f9f9f9;
+  transition: 0.1s;
+  padding: 0.5rem;
+}
+
+.Header a:hover {
+  color: #00df5e;
+}
+
+.headerInfo {
+  display: flex;
+  align-items: center;
+}
+
+.info h1 {
+  font-size: 2.2rem;
+  width: 25rem;
+}
+
+.info p {
+  opacity: 0.5;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.info button {
+  padding: 1rem;
+  font-size: 0.8rem;
+  border: none;
+  font-weight: bold;
+  margin-right: 1rem;
+  box-sizing: border-box;
+  width: 150px;
+  transition: 0.3s;
+}
+
+.info .download {
+  background-color: #00df5e;
+}
+
+.info .download:hover,
+.info .download:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5px #89d316, 0 0 0 1px #00df5e;
+  background-color: transparent;
+  color: #00df5e;
+}
+
+.info .entrar {
+  background-color: transparent;
+  border: 0.2px solid rgb(51, 51, 51);
+  color: #f9f9f9;
+}
+
+.info .entrar:hover,
+.info .entrar:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5px #1a1a1a, 0 0 0 1px #f9f9f9;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.pageImg {
+  width: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.img {
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  .Header {
+    flex-wrap: wrap;
+  }
+  .headerInfo {
+    flex-direction: column;
+  }
+  .img {
+    order: 1;
+  }
+  .info {
+    order: 2;
+    margin-bottom: 3rem;
+  }
+  .pageImg {
+    padding: 0;
+  }
+}
